@@ -1,0 +1,35 @@
+{
+  "name": "gcf-base",
+  "main": "index.js",
+  "author": "Nao YONASHIRO",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix src",
+    "test": "ava",
+    "build": "webpack"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": ["babel-register"],
+    "files": ["./src/**/*.test.js"]
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "6",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.8.1",
+    "webpack": "^3.8.1"
+  }
+}
